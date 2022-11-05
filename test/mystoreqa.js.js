@@ -6,7 +6,7 @@ const { it } = require('mocha');
 const assert = chai.assert;
 const expect = chai.expect;
 
-describe('swagLabs', function() {
+describe('myStore', function() {
     let driver;
 
     before(function() {
