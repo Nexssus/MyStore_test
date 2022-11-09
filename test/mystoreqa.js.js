@@ -47,14 +47,16 @@ describe('myStore', function() {
     it("Input personal information", async function(){
         //const gender = await driver.findElement(By.id('id_gender1'));
        // await gender.click();
-        const firstName = await driver.findElement(By.id('customer_firstname'));
+        const firstName = await driver.findElement(By.className('is_required validate form-control'));
         firstName.sendKeys('Negovan');
-        const lastName = await driver.findElement(By.id('customer_lastname'));
-        lastName.sendKeys('Milenkovic');
+        //const lastName = await driver.findElement(By.id('customer_lastname'));
+        //lastName.sendKeys('Milenkovic');
         const email = await driver.findElement(By.id('email'));
         email.sendKeys('mnegovan@example.com');
         const password = await driver.findElement(By.id('passwd'));
         password.sendKeys(12345);
+        const name = await driver.findElement(By.id('firstname'));
+        name.sendKeys('Negovan');
 
     })
 
